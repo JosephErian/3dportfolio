@@ -20,7 +20,7 @@ const Navbar = () => {
             window.scrollTo(0,0);
           }}
         >
-          <img src={logo} alt='logo' className='w-5 h-9 object-contain'/>
+          <img src={logo} alt='logo' className='w-5 h-8 object-contain'/>
           <p className='text-[18px] flex text-white font-bold cursor-pointer'>oe Erian &nbsp;<span className='sm:block hidden'>| Web Developer</span></p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
@@ -43,7 +43,7 @@ const Navbar = () => {
           className='w-[28px] h-[28px] object-contain cursor-pointer'
           onClick={()=>setToggle(!toggle)}
           />
-         <div className={`${toggle ? 'flex' : 'hidden'} rounded-xl p-6 bg-[#915eff] absolute top-20 right-0 mx-4 my-2 min-w-[140px]`}>
+         <div className={`${toggle ? 'flex' : 'hidden'} rounded-xl p-6 bg-[#915eff] opacity-90 absolute top-20 right-0 mx-4 my-2 min-w-[140px]`}>
          <ul className='list-none flex items-start justify-end flex-col gap-4'>
           {navLinks.map((nav) => (
             <li

@@ -1,5 +1,6 @@
 import React from 'react'
 import { styles } from '../styles'
+import ComputersCanvas from './canvas/Computers'
 
 const Hero = () => {
   return (
@@ -10,10 +11,11 @@ const Hero = () => {
           <div className='w-1 sm:h-80 h-40 violet-gradient'/>
         </div>
         <div >
-          <h1 className={`${styles.heroHeadText}`}>I'm <span className='text-[#915eff]'>Joe Erian</span></h1>
-          <h2 className={`${styles.heroSubText} mt-2 text-white-100`}>I'm a Full Stack Web Developer</h2>
+          <h1 className={`${styles.heroHeadText}`}>Hi, I'm <span className='text-[#915eff]'>Joe Erian</span></h1>
+          <h2 className={`${styles.heroSubText} mt-2 text-white-100`}>Full Stack Web Developer <br className='sm:block hidden '/> Graphic Designer</h2>
         </div>
       </div>
+        <ComputersCanvas />
     </section>
   )
 }
