@@ -9,21 +9,22 @@ import { textVariant } from '../utils/motion';
 const ExperienceCard = ({exp}) => {
   return(
     <VerticalTimelineElement
-        contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+        contentStyle={{ background: '#1d1836', color: '#fff' }}
+        contentArrowStyle={{ borderRight: '7px solid  #232631' }}
         date={exp.date}
         iconStyle={{background: exp.iconBg}}
         icon={
           <div>
-            <img src={exp.icon} alt={exp.company_name}/>
+            <img src={exp.icon} alt={exp.company_name} className='object-contain'/>
           </div>
           }
       >
-    <h3 className="vertical-timeline-element-title">{exp.company_name}</h3>
-    <h4 className="vertical-timeline-element-subtitle">{exp.points}</h4>
-    <p>
-      {exp.date}
-    </p>
+        <h3 className={`${styles.heroSubText}`}>{exp.company_name}</h3>
+        <ul className='mt-5 list-disc ml-5 space-y-2'>{exp.points.map((point,index)=> (
+          <li key={`exp-point-${index}`} className='text-white-100 text-[14px] pl-1 tracking-wider'>
+            {point}
+          </li>
+        ))}</ul>
     </VerticalTimelineElement>
   )
 }
