@@ -1,14 +1,14 @@
 import React from 'react';
 import { services } from '../constants';
 import { styles } from '../styles';
-import Tilt from 'react-tilt';
+import Tilt2 from 'react-tilt';
 import { motion } from 'framer-motion';
 import {SectionWrapper} from '../hoc/'
 import {textVariant, fadeIn} from '../utils/motion'
 
 export const ServiceCard = ({title, icon, index}) =>{
   return (
-        <Tilt className="xs:w-[250px] w-full">
+        <Tilt2 className="xs:w-[250px] w-full">
             <motion.div 
               variants={fadeIn('right','spring', 0.5 * index, 0.75)}
               className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
@@ -25,7 +25,7 @@ export const ServiceCard = ({title, icon, index}) =>{
                 <h2 className='text-white text-[20px] text-center'>{title}</h2>
               </div>
             </motion.div>
-          </Tilt>
+          </Tilt2>
   )
 }
 
