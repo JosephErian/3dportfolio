@@ -20,29 +20,18 @@ const ProjectCard = ({index, name,description, tags, image, source_code_link, li
           speed: 450,
         }} 
         >
+          {/* onClick={()=> window.open(source_code_link, '_blank')} */}
           {/*The props of the image object and others*/} 
-        <div className='relative w-full h-[230px]'>
-          <img className='object-cover w-full h-full rounded-2xl' src={image} alt={name}/>
-          <div className='absolute inset-0 flex justify-between m-3 card-img_hover'>
-              <div 
-              /*that how to set a link*/
-                onClick={()=> window.open(source_code_link, '_blank')}
-                className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
-                >
-                  <img src={github} alt='github' className='w-1/2 h-1/2 object-contain'/>
-              </div>
-              {live_code_link && <div 
-              /*that how to set a link*/
-                onClick={()=> window.open(live_code_link, '_blank')}
-                className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
-                >
-                  <img src={live} alt='live' className='w-1/2 h-1/2 object-contain'/>
-              </div>}
-          
-          </div>
+        <div className='relative w-full h-[230px]' >
+          <a href={source_code_link} target="_blank" rel="noopener" className='cursor-pointer'>
+            <img className='object-cover w-full h-full rounded-2xl' src={image} alt={name}/>
+          </a>
         </div>
         <div className='mt-5'>
+          <div className='flex flex-row justify-between items-center'>
             <h2 className='text-white font-bold text-[24px]'>{name}</h2>
+            <div onClick={()=> window.open(live_code_link, '_blank')} className='cursor-pointer font-bold text-[14px] underline text-red-600 border-red-600'>LIVE</div>
+          </div>
             <p className='text-secondary text-[14px]'>{description}</p> 
         </div>
         <div className='mt-4 flex flex-wrap gap-2'>
