@@ -4,10 +4,10 @@ import { projects } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
-import { github } from '../assets';
+import { github, live } from '../assets';
 import { fadeIn, textVariant } from '../utils/motion';
 
-const ProjectCard = ({index, name,description, tags, image, source_code_link }) => {
+const ProjectCard = ({index, name,description, tags, image, source_code_link, live_code_link }) => {
   return (
     //The start of the projectCard
     <motion.div variants={fadeIn('up','spring', index * 0.5, 0.75)} >
@@ -23,14 +23,21 @@ const ProjectCard = ({index, name,description, tags, image, source_code_link }) 
           {/*The props of the image object and others*/} 
         <div className='relative w-full h-[230px]'>
           <img className='object-cover w-full h-full rounded-2xl' src={image} alt={name}/>
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-            <div 
-            /*that how to set a link*/
-              onClick={()=> window.open(source_code_link, '_blank')}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
-              >
-                <img src={github} alt='github' className='w-1/2 h-1/2 object-contain'/>
-            </div>
+          <div className='absolute inset-0 flex justify-between m-3 card-img_hover'>
+              <div 
+              /*that how to set a link*/
+                onClick={()=> window.open(source_code_link, '_blank')}
+                className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+                >
+                  <img src={github} alt='github' className='w-1/2 h-1/2 object-contain'/>
+              </div>
+              {live_code_link && <div 
+              /*that how to set a link*/
+                onClick={()=> window.open(live_code_link, '_blank')}
+                className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+                >
+                  <img src={live} alt='live' className='w-1/2 h-1/2 object-contain'/>
+              </div>}
           
           </div>
         </div>

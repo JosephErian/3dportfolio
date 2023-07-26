@@ -6,9 +6,19 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import live from "./live.png";
+import chatgpt from "./chatgpt.png"
+import rest from "./rest.png"
+import smart from "./smart.png"
+import jsm from "./jsm.png"
+
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
+import postgres from './tech/postgres.png';
+import expressjs from './tech/expressjs.png';
+import materialui from './tech/materialui.png';
+
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
@@ -22,6 +32,10 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import meta from "./company/meta.png";
+import it from "./company/it.png";
+import tito from "./company/tito.png";
+import upwork from "./company/upwork.png";
+import phc from "./company/phc.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
@@ -59,4 +73,16 @@ export {
   carrent,
   jobit,
   tripguide,
+  phc,
+  upwork,
+  tito,
+  it,
+  materialui,
+  expressjs,
+  postgres,
+  live,
+  chatgpt,
+  rest,
+  smart,
+  jsm
 };

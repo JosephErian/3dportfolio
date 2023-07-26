@@ -10,16 +10,17 @@ const ExperienceCard = ({exp}) => {
   return(
     <VerticalTimelineElement
         contentStyle={{ background: '#1d1836', color: '#fff' }}
+        className='items-center'
         contentArrowStyle={{ borderRight: '7px solid  #232631' }}
         date={exp.date}
         iconStyle={{background: exp.iconBg}}
         icon={
-          <div>
+          <div className='cursor-pointer' onClick={()=> window.open(exp.link, '_blank')}>
             <img src={exp.icon} alt={exp.company_name} className='object-contain'/>
           </div>
           }
       >
-        <h3 className={`${styles.heroSubText}`}>{exp.company_name}</h3>
+        <h3 className={`${styles.heroSubText}`}>{exp.company_name}<span className='text-white text-[18px]'>{`  (${exp.title})`}</span></h3>
         <ul className='mt-5 list-disc ml-5 space-y-2'>{exp.points.map((point,index)=> (
           <li key={`exp-point-${index}`} className='text-white-100 text-[14px] pl-1 tracking-wider'>
             {point}

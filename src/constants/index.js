@@ -23,6 +23,18 @@ import {
   jobit,
   tripguide,
   threejs,
+  phc,
+  upwork,
+  tito,
+  it,
+  materialui,
+  postgres,
+  expressjs,
+  live,
+  chatgpt,
+  rest,
+  jsm,
+  smart,
 } from "../assets";
 
 export const navLinks = [
@@ -89,12 +101,24 @@ const technologies = [
     icon: tailwind,
   },
   {
+    name: "MaterialUI CSS",
+    icon: materialui,
+  },
+  {
     name: "Node JS",
     icon: nodejs,
   },
   {
+    name: "Express JS",
+    icon: expressjs,
+  },
+  {
     name: "MongoDB",
     icon: mongodb,
+  },
+  {
+    name: "postgreSQL",
+    icon: postgres,
   },
   {
     name: "Three JS",
@@ -104,6 +128,7 @@ const technologies = [
     name: "git",
     icon: git,
   },
+
   // {
   //   name: "figma",
   //   icon: figma,
@@ -116,55 +141,56 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Tito Business Center",
+    company_name: "IT Specialist",
+    icon: tito,
+    link: "https://www.linkedin.com/company/tito-business-center/",
     iconBg: "#383E56",
+    date: "June 2019 - April 2021",
+    points: [
+      "Maintained, installed and prepared more than 1000 Windows and Linux Computers.",
+      "Installed Hardware like hard drives, memories and combining computers.", 
+      "Installed many of software in clients' desktops and laptops just like Graphic Design Programs, Games, etc..",
+    ],
+  },
+  {
+    title: "Freelancer",
+    company_name: "Graphic Designer",
+    icon: upwork,
+    link: "https://www.linkedin.com/company/upwork/",
+    iconBg: "#E6DEDD",
     date: "March 2020 - April 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Specialized in creating visually appealing designs.",
+      "Developed creative concepts and visual designs for logos and branding materials",
+      "Mostly Worked with Libraries, local Companies and printing Offices.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "PHC",
+    company_name: "IT Specialist",
+    icon: phc,
+    link: "https://www.linkedin.com/company/pharmacists-house-for-pharmaceutical-trading/mycompany/",
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "July 2022 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Built and Maintained full branch consists of +30 computers configuring Active Directory, File Server, Print Server, DHCP, DNS and End-users computers.",
+      "Installed Physical Security Cameras like Hikvision,Yes-Original and Fingerprint devices.",
+      "Extend network cables into buildings.",
+      "Worked on Firewall systems i.e. Fortigate 60E.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Freelancer",
+    company_name: "Web Developer",
+    icon: it,
+    link: "https://www.linkedin.com/in/joseph-erian/",
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "June 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Working now for many companies and local agencies.",
+      "Support with realiable solutions with the bugs.",
+      "Implementing tasks on time.",
     ],
   },
 ];
@@ -198,67 +224,90 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "ChatGPT3",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "One page website just with amazing styles and colors.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "MaterialUI",
         color: "green-text-gradient",
       },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: chatgpt,
+    source_code_link: "https://github.com/josephErian/ChatGPT3",
+    live_code_link:"https://josepherian.github.io/ChatGPT3/"
   },
   {
-    name: "Job IT",
+    name: "3D Shirt Modeling",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "3D Web App for modeling shrits with different texture Client-side and Server-side using three.js and express.js ",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "MaterialUI",
         color: "green-text-gradient",
+      },
+      {
+        name: "Express.js",
+        color: "white-text-gradient",
+      },
+      
+    ],
+    image: jsm,
+    source_code_link: "https://github.com/josephErian/jsm",
+    live_code_link:"https://jshirt-73sx.onrender.com/"
+  },
+  {
+    name: "GertichRestaurant",
+    description:
+      "Webpage for a Resturant with coloful and well designed layout with wonderful gallery.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Vanilla CSS",
+        color: "yellow-text-gradient",
       },
       {
         name: "scss",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: rest,
+    source_code_link: "https://github.com/josephErian/GeritchRestaurant",
+    live_code_link:"https://gertichrestaurant.onrender.com"
   },
   {
-    name: "Trip Guide",
+    name: "Smart Brain",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
       {
-        name: "nextjs",
+        name: "Express.js",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "React",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Tailwind CSS",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: smart,
+    live_code_link: "https://smart-brain-front-8meq.onrender.com/",
+    source_code_link: "https://github.com/josephErian/smart-brain-front",
   },
 ];
 
